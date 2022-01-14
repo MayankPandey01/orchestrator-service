@@ -66,5 +66,5 @@ mock_data_service(:10000) ---RPC--> orchestrator_2(:9001) ---RPC--> orchestrator
 ### Things to note
 
 - This program was tested on both `Windows` and `Linux` and It works as expected
-- If an error arises for `context timeout then try to wait for a few seconds and relaunching the `client`, This issue only arises if the servers are not fully Online and the client is trying to make the Request
+- If an error arises for `context timeout` then try to wait for a few seconds and relaunching the `client`, This issue only arises if the servers are not fully Online and the client is trying to make the Request
 - Go Version Used: `1.14 - 1.17`
