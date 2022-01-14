@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+
+package GetUserByName;
+
+option go_package = "github.com/MayankPandey01/GetUserByName;GetUserByName";
+
+service UserManagement {
+  rpc GetUserByName (NewUser) returns (User) {}
+  rpc GetUser (NewUser) returns (User) {}
+  rpc GetMockUserData (NewUser) returns (User) {}
+}
+
+message NewUser {
+  string name = 1;
+}
+
+message User {
+    string name = 1;
+    int64 class = 2;
+    int32 roll  = 3; 
+}
